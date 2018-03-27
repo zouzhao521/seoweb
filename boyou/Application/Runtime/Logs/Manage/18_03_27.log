@@ -1,0 +1,1248 @@
+[ 2018-03-27T13:53:43+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2018-03-27T13:53:52+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Index/CheckLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001903s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `user` WHERE ( name="admin" and password="21232f297a57a5a743894a0e4a801fc3" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-03-27T13:53:52+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Welcome/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2018-03-27T13:53:52+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2018-03-27T13:54:00+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0436s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000698s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002638s ]
+
+[ 2018-03-27T13:54:02+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2018-03-27T13:54:07+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-03-27T13:54:10+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Pass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2018-03-27T13:54:11+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `dd` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `article` WHERE `dd` = 1 ORDER BY id desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2018-03-27T13:54:13+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Bigad4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [2048] Declaration of Manage\Controller\Bigad4Controller::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\Bigad4Controller.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0549s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000745s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003791s ]
+
+[ 2018-03-27T13:54:14+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Pass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2018-03-27T13:54:15+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0346s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-03-27T13:54:16+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Pass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-03-27T13:54:17+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Bigad4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [2048] Declaration of Manage\Controller\Bigad4Controller::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\Bigad4Controller.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0354s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000648s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005680s ]
+
+[ 2018-03-27T13:54:18+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `dd` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `dd` = 1 ORDER BY id desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001659s ]
+
+[ 2018-03-27T13:54:20+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Link
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+NOTIC: [2048] Declaration of Manage\Controller\LinkController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\LinkController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `alink` [ RunTime:0.0299s ]
+SQL: SELECT * FROM `alink` WHERE `dd` = 1 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bigad4` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `dd` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: page D:\WampServer\www\seoweb\boyou\Application\Runtime\Cache\Manage\d2bc28d0d92451ed1434db4c0feabfcd.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001778s ]
+
+[ 2018-03-27T13:54:21+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `dd` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `dd` = 1 ORDER BY id desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2018-03-27T13:54:47+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Link
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [2048] Declaration of Manage\Controller\LinkController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\LinkController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `alink` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `alink` WHERE `dd` = 1 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bigad4` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `dd` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Undefined variable: page D:\WampServer\www\seoweb\boyou\Application\Runtime\Cache\Manage\d2bc28d0d92451ed1434db4c0feabfcd.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005009s ]
+
+[ 2018-03-27T13:54:53+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Link/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+NOTIC: [2048] Declaration of Manage\Controller\LinkController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\LinkController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `bigad4` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `bigad4` WHERE `dd` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002337s ]
+
+[ 2018-03-27T13:54:56+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2018-03-27T13:55:00+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Link
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2048] Declaration of Manage\Controller\LinkController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\LinkController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `alink` [ RunTime:0.0499s ]
+SQL: SELECT * FROM `alink` WHERE `dd` = 1 ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bigad4` [ RunTime:0.0333s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad4` WHERE `dd` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000421s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined variable: page D:\WampServer\www\seoweb\boyou\Application\Runtime\Cache\Manage\d2bc28d0d92451ed1434db4c0feabfcd.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007463s ]
+
+[ 2018-03-27T13:55:01+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Link/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [2048] Declaration of Manage\Controller\LinkController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\LinkController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `bigad4` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `bigad4` WHERE `dd` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2018-03-27T13:55:10+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Link
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Manage\Controller\LinkController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\LinkController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `alink` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `alink` WHERE `dd` = 1 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bigad4` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad4` WHERE `dd` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: page D:\WampServer\www\seoweb\boyou\Application\Runtime\Cache\Manage\d2bc28d0d92451ed1434db4c0feabfcd.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001758s ]
+
+[ 2018-03-27T13:55:13+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `dd` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `article` WHERE `dd` = 1 ORDER BY id desc LIMIT 0,12   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+
+[ 2018-03-27T13:55:19+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Bigad4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [2048] Declaration of Manage\Controller\Bigad4Controller::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\Bigad4Controller.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000736s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004894s ]
+
+[ 2018-03-27T13:55:20+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Pass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2018-03-27T13:55:21+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000638s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003864s ]
+
+[ 2018-03-27T13:55:24+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Welcome/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2018-03-27T13:55:24+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2018-03-27T13:55:34+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2018-03-27T13:55:51+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Index/CheckLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `user` WHERE ( name="admin" and password="21232f297a57a5a743894a0e4a801fc3" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-03-27T13:55:51+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Welcome/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-03-27T13:55:51+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002039s ]
+
+[ 2018-03-27T13:55:59+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2018-03-27T13:56:00+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Index/CheckLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0130s ]
+
+[ 2018-03-27T13:56:10+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Index/CheckLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `user` WHERE ( name="admin" and password="21232f297a57a5a743894a0e4a801fc3" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-03-27T13:56:10+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Welcome/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2018-03-27T13:56:10+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002019s ]
+
+[ 2018-03-27T13:56:27+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2018-03-27T13:56:34+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Index/CheckLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `user` WHERE ( name="admin" and password="21232f297a57a5a743894a0e4a801fc3" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-03-27T13:56:34+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Welcome/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002708s ]
+
+[ 2018-03-27T13:56:35+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2018-03-27T13:57:23+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Pass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2018-03-27T13:57:23+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2018-03-27T13:57:34+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `dd` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` WHERE `dd` = 1 ORDER BY id desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000641s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007563s ]
+
+[ 2018-03-27T13:57:35+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Bigad4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [2048] Declaration of Manage\Controller\Bigad4Controller::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\Bigad4Controller.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2018-03-27T13:57:35+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Pass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2018-03-27T13:57:36+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `lianxi` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `lianxi` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2018-03-27T13:57:36+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Bigad4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+NOTIC: [2048] Declaration of Manage\Controller\Bigad4Controller::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\Bigad4Controller.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001631s ]
+
+[ 2018-03-27T13:57:38+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `dd` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `dd` = 1 ORDER BY id desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002041s ]
+
+[ 2018-03-27T13:57:40+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Bigad4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+NOTIC: [2048] Declaration of Manage\Controller\Bigad4Controller::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\Bigad4Controller.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2018-03-27T14:00:00+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `dd` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `dd` = 1 ORDER BY id desc LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bigad2` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001540s ]
+
+[ 2018-03-27T14:00:01+08:00 ] 127.0.0.1 /seoweb/boyou/manage.php?s=/Manage/Arclist/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Manage\Controller\ArclistController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\WampServer\www\seoweb\boyou\Application\Manage\Controller\ArclistController.class.php 第 384 行.
+SQL: SHOW COLUMNS FROM `bigad2` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `bigad2` WHERE `dd` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+

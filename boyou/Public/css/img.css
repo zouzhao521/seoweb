@@ -1,0 +1,2199 @@
+.pswp {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  left: 0;
+
+  top: 0;
+
+  overflow: hidden;
+
+  -ms-touch-action: none;
+
+  touch-action: none;
+
+  z-index: 1500;
+
+  -webkit-text-size-adjust: 100%;
+
+  font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+
+  /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
+
+  -webkit-backface-visibility: hidden;
+
+  outline: none;
+
+  -webkit-user-select: none;
+
+}
+
+.pswp * {
+
+  -webkit-box-sizing: border-box;
+
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+.pswp img {
+
+  max-width: none;
+
+}
+
+/* style is added when JS option showHideOpacity is set to true */
+
+.pswp--animate_opacity {
+
+  /* 0.001, because opacity:0 doesn't trigger Paint action, which causes lag at start of transition */
+
+  opacity: 0.001;
+
+  will-change: opacity;
+
+  /* for open/close transition */
+
+  -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+
+  transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+
+}
+
+.pswp--open {
+
+  display: block;
+
+}
+
+.pswp--zoom-allowed .pswp__img {
+
+  /* autoprefixer: off */
+
+  cursor: -webkit-zoom-in;
+
+  cursor: -moz-zoom-in;
+
+  cursor: zoom-in;
+
+}
+
+.pswp--zoomed-in .pswp__img {
+
+  /* autoprefixer: off */
+
+  cursor: -webkit-grab;
+
+  cursor: -moz-grab;
+
+  cursor: grab;
+
+}
+
+.pswp--dragging .pswp__img {
+
+  /* autoprefixer: off */
+
+  cursor: -webkit-grabbing;
+
+  cursor: -moz-grabbing;
+
+  cursor: grabbing;
+
+}
+
+/*
+
+	Background is added as a separate element.
+
+	As animating opacity is much faster than animating rgba() background-color.
+
+*/
+
+.pswp__bg {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  opacity: 0;
+
+  -webkit-backface-visibility: hidden;
+
+  will-change: opacity;
+
+}
+
+.pswp__scroll-wrap {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+}
+
+.pswp__container,
+
+.pswp__zoom-wrap {
+
+  -ms-touch-action: none;
+
+  touch-action: none;
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  top: 0;
+
+  bottom: 0;
+
+}
+
+/* Prevent selection and tap highlights */
+
+.pswp__container,
+
+.pswp__img {
+
+  -webkit-user-select: none;
+
+  -moz-user-select: none;
+
+  -ms-user-select: none;
+
+  user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+
+  -webkit-touch-callout: none;
+
+}
+
+.pswp__zoom-wrap {
+
+  display: -webkit-box;
+
+  -webkit-box-align: center;
+
+  position: absolute;
+
+  width: 100%;
+
+  -webkit-transform-origin: left top;
+
+  -ms-transform-origin: left top;
+
+  transform-origin: left top;
+
+  /* for open/close transition */
+
+  -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
+
+  transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
+
+}
+
+.pswp__bg {
+
+  will-change: opacity;
+
+  /* for open/close transition */
+
+  -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+
+  transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+
+}
+
+.pswp--animated-in .pswp__bg,
+
+.pswp--animated-in .pswp__zoom-wrap {
+
+  -webkit-transition: none;
+
+  transition: none;
+
+}
+
+.pswp__container,
+
+.pswp__zoom-wrap {
+
+  -webkit-backface-visibility: hidden;
+
+  will-change: transform;
+
+}
+
+.pswp__item {
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  top: 0;
+
+  bottom: 0;
+
+  overflow: hidden;
+
+}
+
+.pswp__img {
+
+  position: absolute;
+
+  width: auto;
+
+  height: auto;
+
+  top: -5%;
+
+  left: 0;
+
+}
+
+/*
+
+	stretched thumbnail or div placeholder element (see below)
+
+	style is added to avoid flickering in webkit/blink when layers overlap
+
+*/
+
+.pswp__img--placeholder {
+
+  -webkit-backface-visibility: hidden;
+
+}
+
+/*
+
+	div element that matches size of large image
+
+	large image loads on top of it
+
+*/
+
+.pswp__img--placeholder--blank {
+
+  background: #303030;
+
+}
+
+.pswp--ie .pswp__img {
+
+  width: 100% !important;
+
+  height: auto !important;
+
+  left: 0;
+
+  top: 0;
+
+}
+
+/*
+
+	Error message appears when image is not loaded
+
+	(JS option errorMsg controls markup)
+
+*/
+
+.pswp__error-msg {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  margin-top: -25px;
+
+  margin-left: -40px;
+
+  width: 80px;
+
+  height: 30px;
+
+  background: url(https://s2.pstatp.com/site/lib/images/gallery_loading_fail.png) no-repeat center top;
+
+  background-size: 65px;
+
+  padding-top: 60px;
+
+  box-sizing: content-box;
+
+  text-align: center;
+
+}
+
+.pswp__error-msg button {
+
+  font-size: 14px;
+
+  line-height: 2em;
+
+  padding: 0 10px;
+
+  color: #cacaca;
+
+  border: none;
+
+  border-radius: 3px;
+
+  background: none;
+
+}
+
+.line1,
+
+.line2,
+
+.line3,
+
+.line4 {
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+
+}
+
+.line1 {
+
+  -webkit-line-clamp: 1;
+
+}
+
+.line2 {
+
+  -webkit-line-clamp: 2;
+
+}
+
+.line3 {
+
+  -webkit-line-clamp: 3;
+
+}
+
+.line4 {
+
+  -webkit-line-clamp: 4;
+
+}
+
+.opacity_transition {
+
+  -webkit-transition: opacity 0.25s linear;
+
+  will-change: opacity;
+
+}
+
+html {
+
+  background: #1b1b1b;
+
+}
+
+body {
+
+  background: #1b1b1b;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+.clearfix:after {
+
+  visibility: hidden;
+
+  display: block;
+
+  font-size: 0;
+
+  content: " ";
+
+  clear: both;
+
+  height: 0;
+
+}
+
+.link {
+
+  -webkit-tap-highlight-color: rgba(27, 27, 27, 0.4);
+
+  -webkit-touch-callout: none;
+
+}
+
+#gallery {
+
+  display: none;
+
+}
+
+.pswp__text {
+
+  color: #cacaca;
+
+  text-align: left;
+
+  font-size: 13px;
+
+  line-height: 18px;
+
+}
+
+.pswp__title {
+
+  font-size: 17px;
+
+  line-height: 1.25em;
+
+}
+
+.pswp__desc,
+
+.pswp__title_con {
+
+  margin: 8px auto 5px auto;
+
+  padding: 0 15px;
+
+}
+
+.pswp__desc {
+
+  color: #cacaca;
+
+  text-align: left;
+
+  font-size: 13px;
+
+  line-height: 18px;
+
+  overflow: scroll;
+
+  overflow-x: hidden;
+
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.pswp__desc::-webkit-scrollbar {
+
+  width: 3px;
+
+}
+
+.pswp__desc::-webkit-scrollbar-thumb:vertical {
+
+  width: 3px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  border-radius: 3px;
+
+}
+
+.pswp__title_con {
+
+  color: #FFF;
+
+  padding-right: 60px;
+
+  position: relative;
+
+}
+
+.pswp__counter {
+
+  font-size: 12px;
+
+  position: absolute;
+
+  right: 15px;
+
+  top: 0px;
+
+}
+
+.pswp__counter i {
+
+  font-style: normal;
+
+  font-size: 17px;
+
+}
+
+@media screen and (min-width: 360px) {
+
+  .pswp__title {
+
+    font-size: 19px;
+
+  }
+
+  .pswp__counter {
+
+    font-size: 14px;
+
+  }
+
+  .pswp__counter i {
+
+    font-size: 19px;
+
+  }
+
+}
+
+.pswp__caption:empty {
+
+  display: none;
+
+}
+
+.pswp__preloader {
+
+  width: 32px;
+
+  height: 32px;
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  margin-left: -16px;
+
+  margin-top: -16px;
+
+  opacity: 0;
+
+  -webkit-transition: opacity 0.25s linear;
+
+  will-change: opacity;
+
+  direction: ltr;
+
+  pointer-events: none;
+
+  background: url(https://s2.pstatp.com/site/lib/images/gallery_loading.png) no-repeat center center;
+
+  background-size: contain;
+
+}
+
+.pswp__preloader--active {
+
+  opacity: 1;
+
+}
+
+.pswp--css_animation .pswp__preloader--active {
+
+  -webkit-animation: clockwise 1s linear infinite;
+
+}
+
+.pswp__related-tip {
+
+  font-size: 12px;
+
+  line-height: 1.2em;
+
+  color: #fff;
+
+  width: 1em;
+
+  position: absolute;
+
+  top: 50%;
+
+  right: 0;
+
+  margin-top: -60px;
+
+  opacity: 0;
+
+  -webkit-transition: opacity 0.15s linear;
+
+  will-change: opacity;
+
+  direction: ltr;
+
+  pointer-events: none;
+
+  background: url(https://s2.pstatp.com/site/lib/images/arrow_image_recom.png) rgba(0, 0, 0, 0.6) no-repeat 33px center;
+
+  background-size: 16px;
+
+  padding: 18px 38px 18px 14px;
+
+  border-radius: 6px 0 0 6px;
+
+  z-index: 1600;
+
+}
+
+@-webkit-keyframes clockwise {
+
+  0% {
+
+    -webkit-transform: rotate(0deg);
+
+  }
+
+  100% {
+
+    -webkit-transform: rotate(360deg);
+
+  }
+
+}
+
+@-webkit-keyframes donut-rotate {
+
+  0% {
+
+    -webkit-transform: rotate(0);
+
+  }
+
+  50% {
+
+    -webkit-transform: rotate(-140deg);
+
+  }
+
+  100% {
+
+    -webkit-transform: rotate(0);
+
+  }
+
+}
+
+/*
+
+
+
+	6. Additional styles
+
+
+
+ */
+
+/* root element of UI */
+
+.pswp__ui {
+
+  -webkit-font-smoothing: auto;
+
+  visibility: visible;
+
+  opacity: 1;
+
+  z-index: 1550;
+
+}
+
+.pswp__comment,
+
+.pswp__top-bar {
+
+  display: none;
+
+}
+
+.pswp__top-gradient {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  pointer-events: none;
+
+  height: 64px;
+
+}
+
+.pswp__bottom-bar {
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  padding-bottom: 48px;
+
+  width: 100%;
+
+  /*-webkit-backdrop-filter:blur(5px);*/
+
+}
+
+.landscape .pswp__bottom-bar {
+
+  padding-bottom: 10px;
+
+}
+
+.pswp__bottom-bar,
+
+.pswp__top-gradient {
+
+  -webkit-transition: opacity 0.25s linear;
+
+  will-change: opacity;
+
+  background: rgba(27, 27, 27, 0.7);
+
+}
+
+/*
+
+	pswp__ui--hidden class is added when controls are hidden
+
+	e.g. when user taps to toggle visibility of controls
+
+*/
+
+.pswp__ui--none {
+
+  display: none;
+
+}
+
+.pswp__ui--hidden .pswp__top-gradient,
+
+.pswp__ui--hidden .pswp__bottom-bar {
+
+  /* Force paint & create composition layer for controls. */
+
+  opacity: 0.001;
+
+}
+
+.pswp__element--disabled {
+
+  display: none !important;
+
+}
+
+/*相关图集*/
+
+.pswp__relate {
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  -webkit-box-sizing: border-box;
+
+}
+
+.pswp__relate .pswp__relate-item {
+
+  float: left;
+
+  width: 49.5%;
+
+  margin-right: 1%;
+
+  margin-bottom: 10px;
+
+}
+
+.pswp__relate .pswp__relate-item:nth-child(2n) {
+
+  margin-right: 0;
+
+}
+
+.pswp__relate .pswp__relate-item .pswp__relate-link {
+
+  border-radius: 0;
+
+  border: none;
+
+  text-decoration: none;
+
+  display: block;
+
+  -webkit-tap-highlight-color: rgba(27, 27, 27, 0.4);
+
+  -webkit-touch-callout: none;
+
+}
+
+.pswp__relate .pswp__relate-item .pswp__relate-link * {
+
+  pointer-events: none;
+
+}
+
+.pswp__relate .pswp__relate-item .pswp__relate-image {
+
+  position: relative;
+
+  width: 100%;
+
+  padding-bottom: 65%;
+
+  overflow: hidden;
+
+}
+
+.pswp__relate .pswp__relate-item .pswp__relate-image img {
+
+  display: block;
+
+  min-height: 100%;
+
+  width: 100%;
+
+  position: absolute;
+
+}
+
+.pswp__relate .pswp__relate-item .pswp__relate-title {
+
+  color: #cacaca;
+
+  text-align: left;
+
+  font-size: 13px;
+
+  line-height: 18px;
+
+  margin: 5px 5px 0 5px;
+
+}
+
+.pswp__relate .pswp__relate-item:nth-child(2n+1) .pswp__relate-title {
+
+  margin-right: 0;
+
+}
+
+.pswp__relate .pswp__relate-item:nth-child(2n) .pswp__relate-title {
+
+  margin-left: 0;
+
+}
+
+.landscape .pswp__relate {
+
+  max-width: 75%;
+
+}
+
+.landscape .pswp__relate .pswp__relate-item {
+
+  width: 33%;
+
+  margin-right: 0.5%;
+
+}
+
+.landscape .pswp__relate .pswp__relate-item:nth-child(2n) {
+
+  margin-right: 0.5%;
+
+}
+
+.landscape .pswp__relate .pswp__relate-item:nth-child(3n) {
+
+  margin-right: 0;
+
+}
+
+.landscape .pswp__relate .pswp__relate-item:nth-child(4n) {
+
+  clear: left;
+
+}
+
+.pswp__desc_con {
+
+  margin: 10px auto 0 auto;
+
+  padding: 0 15px;
+
+  color: #cacaca;
+
+  font-size: 16px;
+
+  line-height: 22px;
+
+  max-height: 178px;
+
+  overflow: hidden;
+
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+
+  overflow: scroll;
+
+  overflow-x: hidden;
+
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.pswp__desc_con::-webkit-scrollbar {
+
+  width: 3px;
+
+}
+
+.pswp__desc_con::-webkit-scrollbar-thumb:vertical {
+
+  width: 3px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  border-radius: 3px;
+
+}
+
+.landscape .pswp__desc_con {
+
+  max-height: 90px;
+
+}
+
+.pswp__counter-new {
+
+  margin-right: .5em;
+
+}
+
+.pswp__counter-new i {
+
+  font-style: normal;
+
+  font-size: 12px;
+
+}
+
+.pswp__desc-new {
+
+  pointer-events: none;
+
+}
+
+.pswp__error-msg {
+
+  margin-top: -25px;
+
+  margin-left: -40px;
+
+  width: 80px;
+
+  height: 30px;
+
+  background-position: center top;
+
+  background-size: 65px;
+
+  padding-top: 60px;
+
+  box-sizing: content-box;
+
+  text-align: center;
+
+}
+
+.pswp__error-msg button {
+
+  font-size: 14px;
+
+  line-height: 2em;
+
+  padding: 0 10px;
+
+  color: #cacaca;
+
+  border: none;
+
+  border-radius: 3px;
+
+  background: none;
+
+}
+
+#article {
+
+  background: #fff;
+
+}
+
+#article figure {
+
+  padding: 0 15px 15px;
+
+  margin: 0;
+
+  color: #303030;
+
+  font-size: 18px;
+
+  line-height: 1.5em;
+
+}
+
+#article figure:last-child {
+
+  padding-bottom: 30px;
+
+}
+
+#article figure figcaption {
+
+  margin-bottom: 15px;
+
+}
+
+#article figure img {
+
+  display: block;
+
+  opacity: 0;
+
+  width: 100%;
+
+}
+
+#article figure img.loaded {
+
+  opacity: 1;
+
+}
+
+#article figure .img-holder {
+
+  display: block;
+
+  margin: 0 auto;
+
+  max-width: 250px;
+
+  background: url(https://s2.pstatp.com/inapp/image_bg_day.png) #efefef no-repeat center center;
+
+  background-size: 118px;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+
+}
+
+#article #TouTiaoBar {
+
+  height: 40px;
+
+}
+
+#article #TouTiaoBar #logo {
+
+  display: inline-block;
+
+  height: 40px;
+
+  max-width: 100%;
+
+  overflow: hidden;
+
+}
+
+#article #TouTiaoBar #logo img {
+
+  height: 28px;
+
+  margin: 6px 15px;
+
+  display: block;
+
+}
+
+#article h1 {
+
+  display: block;
+
+  font-size: 21px;
+
+  font-weight: bolder;
+
+  color: #000;
+
+  padding: 15px 15px 30px;
+
+  margin: 0;
+
+}
+
+#article header h1 {
+
+  padding: 10px 15px;
+
+}
+
+#article .subtitle {
+
+  padding: 0 15px 20px 15px;
+
+  position: relative;
+
+  font-size: 11px;
+
+  line-height: 16px;
+
+  color: #747474;
+
+}
+
+#article .subtitle a {
+
+  color: #747474;
+
+  margin-right: 10px;
+
+  text-decoration: none;
+
+}
+
+#article .subtitle #toggle_img {
+
+  display: none;
+
+}
+
+.night #article {
+
+  background: #252525;
+
+}
+
+.night #article figure {
+
+  color: #747474;
+
+}
+
+.night #article figure img {
+
+  opacity: .4;
+
+  background: url(https://s2.pstatp.com/inapp/image_bg_night.png) #2b2b2b no-repeat center center;
+
+  background-size: 118px;
+
+}
+
+.night #article #TouTiaoBar {
+
+  opacity: .4;
+
+}
+
+.night #article h1 {
+
+  color: #747474;
+
+}
+
+.banToTB .pswp__price_tag,
+
+.banToTB .pswp__item_zdlink {
+
+  display: none !important;
+
+}
+
+.pswp__price_tag {
+
+  position: absolute;
+
+  width: auto !important;
+
+  height: 24px !important;
+
+  line-height: 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-right: none;
+
+  border-top-left-radius: 4px;
+
+  border-bottom-left-radius: 4px;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  color: #fff;
+
+  text-align: center;
+
+  font-size: 12px;
+
+  margin-right: 16px;
+
+  margin-top: -13px;
+
+  padding-left: 6px;
+
+}
+
+.pswp__price_tag .dot-con {
+
+  position: absolute;
+
+  left: 100%;
+
+  top: 7px;
+
+  margin-left: 10px;
+
+}
+
+.pswp__price_tag .dot {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 10px;
+
+  height: 10px;
+
+  background-color: #fff;
+
+  border-radius: 5px;
+
+}
+
+.pswp__price_tag .dot-animate {
+
+  position: absolute;
+
+  z-index: 9;
+
+  left: -4px;
+
+  top: -4px;
+
+  width: 18px;
+
+  height: 18px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  -webkit-border-radius: 9px;
+
+  border-radius: 9px;
+
+  -webkit-animation: scale_animate 2s linear 0s infinite normal forwards;
+
+  -moz-animation: scale_animate 2s linear 0s infinite normal forwards;
+
+  -o-animation: scale_animate 2s linear 0s infinite normal forwards;
+
+  -ms-animation: scale_animate 2s linear 0s infinite normal forwards;
+
+  animation: scale_animate 2s linear 0s infinite normal forwards;
+
+  -webkit-animation-fill-mode: both;
+
+  -moz-animation-fill-mode: both;
+
+  -o-animation-fill-mode: both;
+
+  -ms-animation-fill-mode: both;
+
+  animation-fill-mode: both;
+
+}
+
+.pswp__price_tag:after {
+
+  content: '';
+
+  position: absolute;
+
+  left: 100%;
+
+  top: -1px;
+
+  width: 10px;
+
+  height: 24px;
+
+  background: url(https://tms3.bytecdn.cn/dist/online/toutiao/Article/feed/gallery/src/img/price_7b45de9.png) 0 0 no-repeat;
+
+  background-size: contain;
+
+}
+
+.pswp__price_tag.position_left {
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-left: none;
+
+  border-radius: 0;
+
+  border-top-right-radius: 6px;
+
+  border-bottom-right-radius: 6px;
+
+  margin: -13px 0 0 16px;
+
+  padding: 0 6px 0 0;
+
+}
+
+.pswp__price_tag span {
+
+  padding: 0 2px;
+
+}
+
+.pswp__price_tag.has_coupon {
+
+  padding: 0;
+
+}
+
+.pswp__price_tag.position_left .dot-con {
+
+  left: -20px;
+
+  margin: 0;
+
+}
+
+.pswp__price_tag.position_left:after {
+
+  left: -10px;
+
+  -webkit-transform: scaleX(-1);
+
+  transform: scaleX(-1);
+
+}
+
+.pswp__desc_title_con {
+
+  padding: 0 15px 0 15px;
+
+  height: 40px;
+
+  overflow: hidden;
+
+  color: #fff;
+
+  line-height: 40px;
+
+}
+
+.info:after,
+
+.shop_wrap:after {
+
+  content: '';
+
+  height: 1px;
+
+  position: absolute;
+
+  left: 15px;
+
+  right: 15px;
+
+  transform: scale(0.1);
+
+  -webkit-transform: scaleY(0.1);
+
+  background: rgba(255, 255, 255, 0.8);
+
+}
+
+.pswp__item_title {
+
+  display: block;
+
+  font-size: 16px;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+
+  line-height: 40px;
+
+}
+
+.pswp__item_zdlink {
+
+  font-size: 16px;
+
+  color: #FFFFFF;
+
+  line-height: 30px;
+
+  float: right;
+
+  text-align: center;
+
+  background: #ff4400;
+
+  height: 30px;
+
+  width: 80px;
+
+  margin-top: 5px;
+
+  border-radius: 10px;
+
+
+}
+
+.arrow-right {
+
+  float: right;
+
+  display: inline-block;
+
+  width: 7px;
+
+  height: 7px;
+
+  border-top: 1px solid #ffffff;
+
+  border-right: 1px solid #ffffff;
+
+  transform: rotate(45deg);
+
+  margin-top: 16px;
+
+  margin-left: 5px;
+  display: none;
+
+}
+
+.coupon_wrap {
+
+  height: 54px;
+
+  width: 92%;
+
+  margin-left: 5%;
+
+  position: absolute;
+
+  left: 0;
+
+  top: -58px;
+
+}
+
+.coupon_wrap .coupon_left {
+
+  background: #fff;
+
+  width: 73%;
+
+  height: 54px;
+
+  float: left;
+
+  margin-right: -1px;
+
+}
+
+.coupon_wrap .coupon_info {
+
+  padding-right: 8px;
+
+  margin-left: 15px;
+
+  line-height: 20px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 2;
+
+  -webkit-box-orient: vertical;
+
+  white-space: normal;
+
+  position: relative;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+}
+
+.coupon_wrap .coupon_right {
+
+  background: #F85959;
+
+  width: 22%;
+
+  height: 54px;
+
+  float: right;
+
+  position: relative;
+
+  left: -5px;
+
+}
+
+.coupon_wrap .coupon_border_img {
+
+  width: 5%;
+
+  height: 54px;
+
+  float: left;
+
+  background: url(https://tms3.bytecdn.cn/dist/online/toutiao/Article/feed/gallery/src/img/card_corner1@3x_581adc4.png) 0 0 repeat-y;
+
+  background-size: 16px 12px;
+
+}
+
+.coupon_wrap .pswp__item_zdlink {
+
+  height: 54px;
+
+  line-height: 54px;
+
+  font-size: 16px;
+
+  color: #FFF3BC;
+
+  width: 100%;
+
+  margin-right: 2px;
+
+}
+
+.shop_wrap {
+
+  padding: 8px 15px;
+
+  overflow: hidden;
+
+  color: #fff;
+
+}
+
+.shop_wrap .shop_left {
+
+  width: 70%;
+
+  float: left;
+
+  position: relative;
+
+}
+
+.shop_wrap .shop_right {
+
+  width: 27%;
+
+  float: right;
+
+  margin-top: 5px;
+
+}
+
+.shop_wrap .shop_logo {
+
+  width: 50px;
+
+  height: 50px;
+
+  display: inline-block;
+
+}
+
+.shop_wrap .shop_info {
+
+  width: 75%;
+
+  margin-left: 10px;
+
+  display: inline-block;
+
+  position: absolute;
+
+}
+
+.shop_wrap .pswp__item_title {
+
+  line-height: 22px;
+
+  margin-top: 4px;
+
+}
+
+.shop_wrap .sales_volume,
+
+.shop_wrap .goods_volume {
+
+  font-size: 12px;
+
+  color: #FFFFFF;
+
+  line-height: 14px;
+
+}
+
+.shop_wrap:after {
+
+  top: 67px;
+
+}
+
+@-moz-keyframes scale_animate {
+
+  0%,
+
+  21%,
+
+  30%,
+
+  51% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 1;
+
+    -ms-filter: none;
+
+    filter: none;
+
+  }
+
+  15%,
+
+  45% {
+
+    -webkit-transform: scale(2);
+
+    -moz-transform: scale(2);
+
+    -o-transform: scale(2);
+
+    -ms-transform: scale(2);
+
+    transform: scale(2);
+
+  }
+
+  100%,
+
+  20%,
+
+  50% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 0;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+    filter: alpha(opacity=0);
+
+  }
+
+}
+
+@-webkit-keyframes scale_animate {
+
+  0%,
+
+  21%,
+
+  30%,
+
+  51% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 1;
+
+    -ms-filter: none;
+
+    filter: none;
+
+  }
+
+  15%,
+
+  45% {
+
+    -webkit-transform: scale(2);
+
+    -moz-transform: scale(2);
+
+    -o-transform: scale(2);
+
+    -ms-transform: scale(2);
+
+    transform: scale(2);
+
+  }
+
+  100%,
+
+  20%,
+
+  50% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 0;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+    filter: alpha(opacity=0);
+
+  }
+
+}
+
+@-o-keyframes scale_animate {
+
+  0%,
+
+  21%,
+
+  30%,
+
+  51% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 1;
+
+    -ms-filter: none;
+
+    filter: none;
+
+  }
+
+  15%,
+
+  45% {
+
+    -webkit-transform: scale(2);
+
+    -moz-transform: scale(2);
+
+    -o-transform: scale(2);
+
+    -ms-transform: scale(2);
+
+    transform: scale(2);
+
+  }
+
+  100%,
+
+  20%,
+
+  50% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 0;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+    filter: alpha(opacity=0);
+
+  }
+
+}
+
+@keyframes scale_animate {
+
+  0%,
+
+  21%,
+
+  30%,
+
+  51% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 1;
+
+    -ms-filter: none;
+
+    filter: none;
+
+  }
+
+  15%,
+
+  45% {
+
+    -webkit-transform: scale(2);
+
+    -moz-transform: scale(2);
+
+    -o-transform: scale(2);
+
+    -ms-transform: scale(2);
+
+    transform: scale(2);
+
+  }
+
+  100%,
+
+  20%,
+
+  50% {
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+
+    opacity: 0;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+    filter: alpha(opacity=0);
+
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  .coupon_wrap .coupon_left .coupon_info,
+
+  .coupon_wrap .coupon_right .pswp__item_zdlink,
+
+  .pswp__desc_con .pswp__desc-new,
+
+  .pswp__desc_con .pswp__counter-new,
+
+  .common_wrap .info .pswp__item_title,
+
+  .common_wrap .info .pswp__item_zdlink,
+
+  .shop_wrap .shop_info .pswp__item_title,
+
+  .shop_wrap .shop_right .pswp__item_zdlink {
+
+    font-size: 14px;
+
+  }
+
+  .pswp__desc_con .pswp__counter-new i {
+
+    font-size: 12px;
+
+  }
+
+}
+
+.pswp__recommend__wrap {
+
+  background: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+
+  right: 0;
+
+  width: 27.2%;
+
+}
+
+.pswp__recommend__wrap span {
+
+  font-size: 12px;
+
+  color: #FFFFFF;
+
+  display: block;
+
+  line-height: 22px;
+
+  height: 22px ;
+
+  width: 100%;
+
+  text-align: center;
+
+}
+
+.pswp__recommend__img img {
+
+  width: 100%;
+
+}
+
+.pswp__recommend__img a {
+
+  display: block;
+
+}
+
+.pswp__recommend__img .pswp__price_tag .dot-con {
+
+  top: 0;
+
+}
+
+.pswp__recommend__img .pswp__price_tag,
+
+.pswp__recommend__img .pswp__price_tag:after {
+
+  background: none;
+
+  border: none;
+
+}
+
+/**
+
+ * Created by liwenwen on 2017/5/19.
+
+ */
+
+.hide {
+
+  display: none;
+
+}
+
+.dialog-wrap,
+
+.toTM-wrap {
+
+  background: rgba(27, 27, 27, 0.7);
+
+  height: 60px;
+
+  padding: 15px;
+
+  position: fixed;
+
+  bottom: 5px;
+
+  left: 0;
+
+  z-index: 9999;
+
+  width: 100%;
+
+  text-align: center;
+
+}
+
+.toTM-wrap {
+
+  padding: 15px 0;
+
+}
+
+.text {
+
+  display: block;
+
+  text-align: center;
+
+  color: #fff;
+
+}
+
+.dialog-btn {
+
+  display: block;
+
+  float: left;
+
+  width: 35%;
+
+  height: 30px;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  line-height: 30px;
+
+  text-align: center;
+
+  margin-left: 8%;
+
+}
+
+.goods-detail {
+
+  background: #F85959;
+
+  color: #FFFFFF;
+
+}
+
+.hot-sell {
+
+  background: #E0E0E0;
+
+  color: #222222;
+
+}
+
+.tm-channel {
+
+  margin-left: 10px;
+
+  background: #F85959;
+
+  color: #FFFFFF;
+
+  display: inline-block;
+
+  width: 22%;
+
+  height: 30px;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  line-height: 30px;
+
+  text-align: center;
+
+}
