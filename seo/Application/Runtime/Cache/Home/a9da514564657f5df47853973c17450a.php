@@ -53,7 +53,7 @@
                         <span>安全理念</span>
                     </dt>
                     <dd>
-                        <a href="savety.html" class="active">
+                        <a href="/seoweb/seo/index.php?s=/Home/Savety" class="active">
                             安全理念
                         </a>
                     </dd>

@@ -6,20 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="renderer" content="webkit">
 <title></title>
-    <link rel="stylesheet" href="/boyou/Public/css/pintuer.css">
-    <link rel="stylesheet" href="/boyou/Public/css/admin.css">
-    <script src="/boyou/Public/js/jquery.js"></script>
-    <script src="/boyou/Public/js/pintuer.js"></script>
+    <link rel="stylesheet" href="/seoweb/seo/Public/css/pintuer.css">
+    <link rel="stylesheet" href="/seoweb/seo/Public/css/admin.css">
+    <script src="/seoweb/seo/Public/js/jquery.js"></script>
+    <script src="/seoweb/seo/Public/js/pintuer.js"></script>
 
-    <script type="text/javascript" charset="utf-8" src="/boyou/Public/js/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/boyou/Public/js/ueditor/ueditor.all.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="/boyou/Public/js/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/seoweb/seo/Public/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/seoweb/seo/Public/js/ueditor/ueditor.all.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/seoweb/seo/Public/js/ueditor/lang/zh-cn/zh-cn.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
   <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="/boyou/manage.php?s=/Manage/Arclist/change" enctype="multipart/form-data">  
+    <form method="post" class="form-x" action="/seoweb/seo/manage.php?s=/Manage/Arclist/change" enctype="multipart/form-data">  
       <div class="form-group">
         <div class="label">
           <label>标题：</label>

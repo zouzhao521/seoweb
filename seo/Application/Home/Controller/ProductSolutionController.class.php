@@ -29,9 +29,6 @@ class ProductSolutionController extends Controller {
 
         $pagesize =4;//每页显示条目
         $page = floor($count/$pagesize);// 总页数
-        if($count/$pagesize !=0){
-            $psize=$count-$pagesize*$page;
-        }
         $pa= I('get.pa');
         if(empty($pa)){
            $pa=0; 
@@ -39,7 +36,7 @@ class ProductSolutionController extends Controller {
         if($pa<0){
             $pa=0;
         }
-        if($page<$pa+1){
+        if($page<$pa){
             $pa=$page;
         }
         
@@ -48,6 +45,12 @@ class ProductSolutionController extends Controller {
         $this->assign('pa',$pa);
         // $show       = $Page->show();// 分页显示输出// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
         if($pa==$page){
+            if($count%$pagesize !=0){
+                $psize=$count-$pagesize*$page;
+            }else{
+                $pa=$page-1;
+                $psize=$pagesize;
+            }
             $articles = M('article')->where(array('dd'=>1))->order('id desc')->limit($pa*$pagesize,$psize)->select();
         }else{
              $articles = M('article')->where(array('dd'=>1))->order('id desc')->limit($pa*$pagesize,$pagesize)->select();

@@ -53,7 +53,7 @@
                         <span>产品亮点</span>
                     </dt>
                     <dd>
-                        <a href="productLiangdian.html" class="active">
+                        <a href="/seoweb/seo/index.php?s=/Home/ProductLiangdian" class="active">
                             产品亮点
                         </a>
                     </dd>
