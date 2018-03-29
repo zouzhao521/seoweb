@@ -53,7 +53,7 @@
                         <span>售后服务</span>
                     </dt>
                     <dd>
-                        <a href="service.html" class="active">
+                        <a href="/seoweb/seo/index.php?s=/Home/Service" class="active">
                             售后服务
                         </a>
                     </dd>

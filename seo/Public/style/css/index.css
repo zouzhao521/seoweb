@@ -47,12 +47,9 @@
 }
 .footer .footer-main {
   padding-top: 36px;
-  padding-left: 260px;
+  margin: 0 auto;
   padding-bottom: 77px;
-  min-width: 1640px;
-}
-.footer .box {
-  min-width: 1375px;
+  width: 1250px;
 }
 .footer .yms {
   float: left;
@@ -61,8 +58,8 @@
   width: 96px;
 }
 .footer ul {
+  max-width: 1124px;
   float: left;
-  width: 1250px;
 }
 .footer ul li {
   float: left;
