@@ -3,17 +3,19 @@
   width: 100%;
 }
 .header .header-top {
-  position: relative;
+  box-sizing: border-box;
   height: 124px;
+  margin: 0 auto;
+  position: relative;
 }
 .header .header-top .logo {
   width: 283px;
   height: 70px;
   display: block;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background: url("../../images/logo.png") 0 0 no-repeat;
-  top: 34px;
-  left: 342px;
 }
 .header .header-nav {
   background-color: #333;
