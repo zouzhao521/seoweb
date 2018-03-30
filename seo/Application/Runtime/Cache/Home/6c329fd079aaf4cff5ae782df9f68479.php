@@ -7,32 +7,32 @@
     <meta content="<?php echo ($website["key"]); ?>" name="keywords" />
     <meta name="description" content="<?php echo ($website["des"]); ?>"/>
     <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="/seoweb/seo/Public/style/css/style.css">
-    <link rel="stylesheet" href="/seoweb/seo/Public/style/css/index.css">
+    <link rel="stylesheet" href="/Public/style/css/style.css">
+    <link rel="stylesheet" href="/Public/style/css/index.css">
 </head>
 
 <body>
    <div class="header">
-        <div class="header-top">
-            <a href="index.html" class="logo"><img src="/seoweb/seo/Public/images/logo.png"/></a>
+        <div class="header-top g-width">
+            <a href="index.html" class="logo"><img src="/Public/images/logo.png"/></a>
         </div>
         <div class="header-nav">
             <div class="nav g-width">
                 <ul class="nav-ul">
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Index">首页</a>
+                        <a href="/index.php?s=/Home/Index">首页</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/ProductSolution">产品解决方案</a>
+                        <a href="/index.php?s=/Home/ProductSolution">产品解决方案</a>
                     </li>
                     <li class="nav-li nav-active">
-                        <a href="/seoweb/seo/index.php?s=/Home/ProductLiangdian">产品亮点</a>
+                        <a href="/index.php?s=/Home/ProductLiangdian">产品亮点</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Savety">安全理念</a>
+                        <a href="/index.php?s=/Home/Savety">安全理念</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Service">售后服务</a>
+                        <a href="/index.php?s=/Home/Service">售后服务</a>
                     </li>
                 </ul>
             </div>
@@ -43,8 +43,8 @@
             <div class="bg"></div>
             <div class="daohang">
                 <i></i>
-                <a href="/seoweb/seo/index.php?s=/Home/Index">博友彩票</a>&nbsp;&nbsp;》
-                <a href="/seoweb/seo/index.php?s=/Home/ProductLiangdian" class="active">产品亮点</a>
+                <a href="/index.php?s=/Home/Index">博友彩票</a>&nbsp;&nbsp;》
+                <a href="/index.php?s=/Home/ProductLiangdian" class="active">产品亮点</a>
             </div>
             <div class="aside">
                 <dl>
@@ -53,7 +53,7 @@
                         <span>产品亮点</span>
                     </dt>
                     <dd>
-                        <a href="/seoweb/seo/index.php?s=/Home/ProductLiangdian" class="active">
+                        <a href="/index.php?s=/Home/ProductLiangdian" class="active">
                             产品亮点
                         </a>
                     </dd>
