@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="renderer" content="webkit">
 <title></title>
-    <link rel="stylesheet" href="/boyou/Public/css/pintuer.css">
-    <link rel="stylesheet" href="/boyou/Public/css/admin.css">
-    <script src="/boyou/Public/js/jquery.js"></script>
-    <script src="/boyou/Public/js/pintuer.js"></script>  
+    <link rel="stylesheet" href="/Public/css/pintuer.css">
+    <link rel="stylesheet" href="/Public/css/admin.css">
+    <script src="/Public/js/jquery.js"></script>
+    <script src="/Public/js/pintuer.js"></script>  
 </head>
 <body>
 <form method="post" action="" id="listform">
@@ -17,7 +17,7 @@
     <div class="panel-head"><strong class="icon-reorder">文章分类</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
     <div class="padding border-bottom">
       <ul class="search" style="padding-left:10px;">
-        <li> <a class="button border-main icon-plus-square-o" href="/boyou/manage.php?s=/Manage/Bigad4/add">添加分类</a> </li>
+        <li> <a class="button border-main icon-plus-square-o" href="/manage.php?s=/Manage/Bigad4/add">添加分类</a> </li>
 
       </ul>
     </div>
@@ -33,7 +33,7 @@
       <?php if(is_array($ad)): $i = 0; $__LIST__ = $ad;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
           <td style="text-align:left; padding-left:20px;"><!-- <input type="checkbox" name="id[]" value="" /> -->
            <?php echo ($vo["id"]); ?></td>
-          <!-- <td width="10%"><img src="/boyou/Public/Uploads/<?php echo ($vo["img"]); ?>" alt="" width="70" height="50" /></td>
+          <!-- <td width="10%"><img src="/Public/Uploads/<?php echo ($vo["img"]); ?>" alt="" width="70" height="50" /></td>
           <td><?php echo ($vo["title"]); ?></td>
           <td><?php echo ($vo["type"]); ?></td> -->
           <td><?php echo ($vo["type"]); ?></td>

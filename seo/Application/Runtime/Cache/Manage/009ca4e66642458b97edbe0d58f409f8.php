@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="renderer" content="webkit">
 <title></title>
-    <link rel="stylesheet" href="/boyou/Public/css/pintuer.css">
-    <link rel="stylesheet" href="/boyou/Public/css/admin.css">
-    <script src="/boyou/Public/js/jquery.js"></script>
-    <script src="/boyou/Public/js/pintuer.js"></script>
+    <link rel="stylesheet" href="/Public/css/pintuer.css">
+    <link rel="stylesheet" href="/Public/css/admin.css">
+    <script src="/Public/js/jquery.js"></script>
+    <script src="/Public/js/pintuer.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
   <div class="panel-head"><strong><span class="icon-key"></span> 修改管理员密码</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="/boyou/manage.php?s=/Manage/Pass/change">
+    <form method="post" class="form-x" action="/manage.php?s=/Manage/Pass/change">
       <div class="form-group">
         <div class="label">
           <label for="sitename">管理员帐号：</label>

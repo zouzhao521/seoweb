@@ -6,7 +6,7 @@
         <meta name="description" content="Expand, contract, animate forms with jQuery wihtout leaving the page" />
         <meta name="keywords" content="expand, form, css3, jquery, animate, width, height, adapt, unobtrusive javascript"/>
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" type="text/css" href="/boyou/Public/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/Public/css/style.css" />
     </head>
     <body style="background: #fff">
 		<div class="wrapper">
@@ -14,7 +14,7 @@
 			<h2>Demo: click the <span>Switch System</span> to see the form animating and switching</h2> -->
 			<div class="content" style="margin-top: 150px;">
 				<div id="form_wrapper" class="form_wrapper">
-					<form class="login active" action="/boyou/manage.php?s=/Manage/Index/CheckLogin" method="post">
+					<form class="login active" action="/manage.php?s=/Manage/Index/CheckLogin" method="post">
 						<h3>Login</h3>
 						<div>
 							<label>Username:</label>

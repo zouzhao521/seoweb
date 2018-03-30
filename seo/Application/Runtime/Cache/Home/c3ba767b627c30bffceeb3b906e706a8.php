@@ -6,36 +6,36 @@
     <title><?php echo ($website["title"]); ?></title>
     <meta content="<?php echo ($website["key"]); ?>" name="keywords" />
     <meta name="description" content="<?php echo ($website["des"]); ?>"/>
-    <script type="text/javascript" charset="utf-8" src="/seoweb/seo/Public/js/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/seoweb/seo/Public/js/ueditor/ueditor.all.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="/seoweb/seo/Public/js/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Public/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Public/js/ueditor/ueditor.all.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/Public/js/ueditor/lang/zh-cn/zh-cn.js"></script>
     <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="/seoweb/seo/Public/style/css/style.css">
-    <link rel="stylesheet" href="/seoweb/seo/Public/style/css/index.css">
+    <link rel="stylesheet" href="/Public/style/css/style.css">
+    <link rel="stylesheet" href="/Public/style/css/index.css">
 </head>
 
 <body>
     <div class="header">
-        <div class="header-top">
-            <a href="index.html" class="logo"><img src="/seoweb/seo/Public/images/logo.png"/></a>
+        <div class="header-top g-width">
+            <a href="index.html" class="logo"><img src="/Public/images/logo.png"/></a>
         </div>
         <div class="header-nav">
             <div class="nav g-width">
                 <ul class="nav-ul">
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Index">首页</a>
+                        <a href="/index.php?s=/Home/Index">首页</a>
                     </li>
                     <li class="nav-li nav-active">
-                        <a href="/seoweb/seo/index.php?s=/Home/ProductSolution">产品解决方案</a>
+                        <a href="/index.php?s=/Home/ProductSolution">产品解决方案</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/ProductLiangdian">产品亮点</a>
+                        <a href="/index.php?s=/Home/ProductLiangdian">产品亮点</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Savety">安全理念</a>
+                        <a href="/index.php?s=/Home/Savety">安全理念</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Service">售后服务</a>
+                        <a href="/index.php?s=/Home/Service">售后服务</a>
                     </li>
                 </ul>
             </div>
@@ -46,8 +46,8 @@
             <div class="bg"></div>
             <div class="daohang">
                 <i></i>
-                <a href="/seoweb/seo/index.php?s=/Home/Index">博友彩票</a>&nbsp;&nbsp;》
-                <a href="/seoweb/seo/index.php?s=/Home/ProductSolution" class="active">产品解决方案</a>
+                <a href="/index.php?s=/Home/Index">博友彩票</a>&nbsp;&nbsp;》
+                <a href="/index.php?s=/Home/ProductSolution" class="active">产品解决方案</a>
             </div>
             <div class="aside">
                 <dl>
@@ -65,7 +65,7 @@
             <div class="product-content g-module">
             <?php if(empty($id)): ?><ul>
                 <?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                        <img src="/seoweb/seo/Public/Uploads/<?php echo ($vo["img"]); ?>" alt="">
+                        <img src="/Public/Uploads/<?php echo ($vo["img"]); ?>" alt="">
                         <div class="desc-box">
                             <h5><?php echo ($vo["title"]); ?></h5>
                             <p><?php echo ($vo["des"]); ?></p>
@@ -75,7 +75,7 @@
                         </div>
                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
                    <!--  <li>
-                        <img src="/seoweb/seo/Public/images/icon_03.png" alt="">
+                        <img src="/Public/images/icon_03.png" alt="">
                         <div class="desc-box">
                             <h5>移动APP购彩版</h5>
                             <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
@@ -85,7 +85,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="/seoweb/seo/Public/images/icon_04.png" alt="">
+                        <img src="/Public/images/icon_04.png" alt="">
                         <div class="desc-box">
                             <h5>彩票全网解决方案</h5>
                             <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
@@ -95,7 +95,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="/seoweb/seo/Public/images/icon_05.png" alt="">
+                        <img src="/Public/images/icon_05.png" alt="">
                         <div class="desc-box">
                             <h5>彩票源码开源合作</h5>
                             <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>

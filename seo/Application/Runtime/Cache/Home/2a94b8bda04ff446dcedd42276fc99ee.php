@@ -7,33 +7,33 @@
     <meta content="<?php echo ($website["key"]); ?>" name="keywords" />
     <meta name="description" content="<?php echo ($website["des"]); ?>"/>
     <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="/seoweb/seo/Public/style/css/style.css" />
-    <link rel="stylesheet" href="/seoweb/seo/Public/style/css/index.css" />
-    <link rel="stylesheet" href="/seoweb/seo/Public/lib/style/swiper-4.1.6.min.css" />
+    <link rel="stylesheet" href="/Public/style/css/style.css" />
+    <link rel="stylesheet" href="/Public/style/css/index.css" />
+    <link rel="stylesheet" href="/Public/lib/style/swiper-4.1.6.min.css" />
 </head>
 
 <body>
     <div class="header">
-        <div class="header-top">
-            <a href="index.html" class="logo"><img src="/seoweb/seo/Public/images/logo.png"/></a>
+        <div class="header-top g-width">
+            <a href="index.html" class="logo"><img src="/Public/images/logo.png"/></a>
         </div>
         <div class="header-nav">
             <div class="nav g-width">
                 <ul class="nav-ul">
                     <li class="nav-li nav-active">
-                        <a href="/seoweb/seo/index.php?s=/Home/Index">首页</a>
+                        <a href="/index.php?s=/Home/Index">首页</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/ProductSolution">产品解决方案</a>
+                        <a href="/index.php?s=/Home/ProductSolution">产品解决方案</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/ProductLiangdian">产品亮点</a>
+                        <a href="/index.php?s=/Home/ProductLiangdian">产品亮点</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Savety">安全理念</a>
+                        <a href="/index.php?s=/Home/Savety">安全理念</a>
                     </li>
                     <li class="nav-li">
-                        <a href="/seoweb/seo/index.php?s=/Home/Service">售后服务</a>
+                        <a href="/index.php?s=/Home/Service">售后服务</a>
                     </li>
                 </ul>
             </div>
@@ -45,22 +45,22 @@
                 <div class='swiper-wrapper'>
                     <div class='swiper-slide'>
                         <a href='javascript:;'>
-                            <img src="/seoweb/seo/Public/images/banner01.png" />
+                            <img src="/Public/images/banner01.png" />
                         </a>
                     </div>
                     <div class='swiper-slide'>
                         <a href='javascript:;'>
-                            <img src="/seoweb/seo/Public/images/banner01.png" />
+                            <img src="/Public/images/banner01.png" />
                         </a>
                     </div>
                     <div class='swiper-slide'>
                         <a href='javascript:;'>
-                            <img src="/seoweb/seo/Public/images/banner01.png" />
+                            <img src="/Public/images/banner01.png" />
                         </a>
                     </div>
                     <div class='swiper-slide'>
                         <a href='javascript:;'>
-                            <img src="/seoweb/seo/Public/images/banner01.png" />
+                            <img src="/Public/images/banner01.png" />
                         </a>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
             <div class="project">
                 <ul class="pro-ul cl">
                     <li class="pro-li">
-                        <img src="/seoweb/seo/Public/images/icon01_weixuanzhong.png" alt="">
+                        <img src="/Public/images/icon01_weixuanzhong.png" alt="">
                         <div class="desc-box">
                             <h3>
                                 彩票网站系统
@@ -113,7 +113,7 @@
                         </div>
                     </li>
                     <li class="pro-li">
-                        <img src="/seoweb/seo/Public/images/icon02_weixuanzhong.png" alt="">
+                        <img src="/Public/images/icon02_weixuanzhong.png" alt="">
                         <div class="desc-box">
                             <h3>
                                 移动APP购彩版
@@ -130,7 +130,7 @@
                         </div>
                     </li>
                     <li class="pro-li">
-                        <img src="/seoweb/seo/Public/images/icon03_weixuanzhong.png" alt="">
+                        <img src="/Public/images/icon03_weixuanzhong.png" alt="">
                         <div class="desc-box">
                             <h3>
                                 彩票全网解决方案
@@ -147,7 +147,7 @@
                         </div>
                     </li>
                     <li class="pro-li">
-                        <img src="/seoweb/seo/Public/images/icon04_weixuanzhong.png" alt="">
+                        <img src="/Public/images/icon04_weixuanzhong.png" alt="">
                         <div class="desc-box">
                             <h3>
                                 彩票源码开源合作
@@ -180,62 +180,62 @@
                 <ul class="workmate cl">
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_01.png" alt="">
+                            <img src="/Public/images/LOGO_01.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_02.png" alt="">
+                            <img src="/Public/images/LOGO_02.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_03.png" alt="">
+                            <img src="/Public/images/LOGO_03.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_04.png" alt="">
+                            <img src="/Public/images/LOGO_04.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_05.png" alt="">
+                            <img src="/Public/images/LOGO_05.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_06.png" alt="">
+                            <img src="/Public/images/LOGO_06.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_07.png" alt="">
+                            <img src="/Public/images/LOGO_07.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_08.png" alt="">
+                            <img src="/Public/images/LOGO_08.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_09.png" alt="">
+                            <img src="/Public/images/LOGO_09.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_10.png" alt="">
+                            <img src="/Public/images/LOGO_10.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_11.png" alt="">
+                            <img src="/Public/images/LOGO_11.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <img src="/seoweb/seo/Public/images/LOGO_12.png" alt="">
+                            <img src="/Public/images/LOGO_12.png" alt="">
                         </a>
                     </li>
                 </ul>
@@ -259,29 +259,29 @@
             </p >
         </div>
     </div>
-    <script src="/seoweb/seo/Public/lib/js/jquery-1.11.3.js"></script>
-    <script src="/seoweb/seo/Public/lib/js/swiper-4.1.6.min.js"></script>
-    <script src="/seoweb/seo/Public/js/swiper.js"></script>
+    <script src="/Public/lib/js/jquery-1.11.3.js"></script>
+    <script src="/Public/lib/js/swiper-4.1.6.min.js"></script>
+    <script src="/Public/js/swiper.js"></script>
     <script>
         var proLi = $(".pro-li");
 
         proLi.on("mouseenter", function (e) {
             for (var i = 0; i < $(".pro-li").length; i++) {
-                $(".pro-li").eq(i).removeClass("active").find("img").attr("src", "/seoweb/seo/Public/images/icon0" + (i + 1) + "_weixuanzhong.png");
+                $(".pro-li").eq(i).removeClass("active").find("img").attr("src", "/Public/images/icon0" + (i + 1) + "_weixuanzhong.png");
             };
-            $(this).addClass("active").find("img").attr("src", "/seoweb/seo/Public/images/icon0" + ($(this).index() + 1) + "_xuanzhong.png");
+            $(this).addClass("active").find("img").attr("src", "/Public/images/icon0" + ($(this).index() + 1) + "_xuanzhong.png");
             var num = $(this).index() + 1;
             $(this).find(".icon-list i").each(function (index, ele) {
-                $(ele).css("background", "url(/seoweb/seo/Public/images/small-icon_0" + ((index + 1) * num) + "_xuanzhong.png) 8px 0 no-repeat")
+                $(ele).css("background", "url(/Public/images/small-icon_0" + ((index + 1) * num) + "_xuanzhong.png) 8px 0 no-repeat")
             })
             $(this).find(".desc-box .desc").eq(0).fadeIn(500);
         })
 
         proLi.on("mouseleave", function () {
             var num = $(this).index() + 1;
-            $(this).removeClass("active").find("img").attr("src", "/seoweb/seo/Public/images/icon0" + ($(this).index() + 1) + "_weixuanzhong.png");
+            $(this).removeClass("active").find("img").attr("src", "/Public/images/icon0" + ($(this).index() + 1) + "_weixuanzhong.png");
             $(this).find(".icon-list i").each(function (index, ele) {
-                $(ele).css("background", "url(/seoweb/seo/Public/images/small-icon_0" + ((index + 1) * num) + "_weixuanzhong.png) 8px 0 no-repeat")
+                $(ele).css("background", "url(/Public/images/small-icon_0" + ((index + 1) * num) + "_weixuanzhong.png) 8px 0 no-repeat")
             })
             $(this).find(".desc-box .desc").eq(0).fadeOut(500);
         })
