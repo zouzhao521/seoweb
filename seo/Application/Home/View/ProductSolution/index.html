@@ -3,13 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{$website.title}</title>
-    <meta content="{$website.key}" name="keywords" />
-    <meta name="description" content="{$website.des}"/>
+    <empty name="id">
+    <title>
+    博友彩票销售系统-提供安全可靠的彩票网站销售系统解决方案 </title>
+    <meta content="彩票网站系统,移动彩票程序,彩票网站源码,彩票平台源码,彩票软件源码" name="keywords" />
+    <meta name="description" content="博友彩票销售系统拥有4大核心技术解决方案,一站式为用户解决彩票网站系统、移动彩票程序的安全稳定问题。"/>
+    <else/>
+    <title>{$art.title}</title>
+    <meta content="{$art.writer}" name="keywords" />
+    <meta name="description" content="{$art.des}"/>
+    </empty>
+
     <script type="text/javascript" charset="utf-8" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="__PUBLIC__/js/ueditor/ueditor.all.js"> </script>
     <script type="text/javascript" charset="utf-8" src="__PUBLIC__/js/ueditor/lang/zh-cn/zh-cn.js"></script>
-    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="__PUBLIC__/style/css/style.css">
     <link rel="stylesheet" href="__PUBLIC__/style/css/index.css">
 </head>
@@ -71,7 +79,7 @@
                     <li>
                         <img src="__PUBLIC__/Uploads/{$vo.img}" alt="">
                         <div class="desc-box">
-                            <h5>{$vo.title}</h5>
+                            <h5><a href="{:U('ProductSolution/index',array('id'=>$vo['id'],'ids'=>'1'))}">{$vo.title}</a></h5>
                             <p>{$vo.des}</p>
                             <div class="know-more">
                                 <a href="{:U('ProductSolution/index',array('id'=>$vo['id'],'ids'=>'1'))}">了解更多&nbsp;》</a>
