@@ -7,13 +7,11 @@ class Bigad4Controller extends Controller {
     	$this->assign('ad',$tab);
         $this->display();
     }
-
-   //添加广告页
-    public function add(){
-
-    	$this->display();
+    public function add()
+    {
+       $this->display();
     }
-
+    //删除广告方法
     public function del($id){
         $ad=M("bigad2");
         $ad->where("id=$id")->setField('dd',0);
@@ -23,22 +21,8 @@ class Bigad4Controller extends Controller {
     //添加广告方法
     public function ads(){
     	$tab=M('bigad2');
-    	$title=I('post.title');
-    	// $type=I('post.type');
-    	// $link=I('post.link');
-
-    	// //图片上传
-     //  $photo=isset($_FILES['img'])?$_FILES['img']:'';
-     //  $upload = new \Think\Upload();// 实例化上传类    
-     //  $upload->maxSize   = 10*1024*1024 ;// 设置附件上传大小    
-     //  $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-     //  $upload->rootPath  =      'Public/Uploads/'; // 设置附件上传目录    // 上传单个文件     
-     //  $info   =   $upload->uploadOne($photo);    if(!$info) {// 上传错误提示错误信息        
-     //  $this->error($upload->getError());}else{// 上传成功 获取上传文件信息     
+    	$title=I('post.title');   
       $data['type']=$title;
-      // $data['img']=$info['savepath'].$info['savename'];
-      // $data['type']=$type;
-      // $data['link']=$link;
       $bool=$tab->add($data); 
       if($bool){
       	$this->success('操作成功',__CONTROLLER__.'/index',2);
@@ -46,7 +30,6 @@ class Bigad4Controller extends Controller {
       	$this->error('操作失败','',2);
       }
     }
-   
 
    //广告修改页
      public function show($id){
@@ -62,21 +45,7 @@ class Bigad4Controller extends Controller {
       	$tab=M('bigad2');
       	$id=I('post.id');
       	$title=I('post.title');
-      	// $aid=I('post.type');
-      	// $link=I('post.link');
-
-      //   //图片上传
-      // $photo=isset($_FILES['img'])?$_FILES['img']:'';
-      // $upload = new \Think\Upload();// 实例化上传类    
-      // $upload->maxSize   = 10*1024*1024 ;// 设置附件上传大小    
-      // $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-      // $upload->rootPath  =      'Public/Uploads/'; // 设置附件上传目录    // 上传单个文件     
-      // $info   =   $upload->uploadOne($photo);    if(!$info) {// 上传错误提示错误信息        
-      // $this->error($upload->getError());}else{// 上传成功 获取上传文件信息     
-      $data['type']=$title;
-      // $data['img']=$info['savepath'].$info['savename'];
-      // $data['aid']=$aid;
-      // $data['link']=$link;
+        $data['type']=$title;
       $bool=$tab->where(array('id'=>$id))->save($data); 
       if($bool){
       	$this->success('修改成功',__CONTROLLER__.'/index',1);

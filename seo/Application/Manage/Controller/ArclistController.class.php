@@ -17,14 +17,22 @@ class ArclistController extends Controller {
 
 
     	//分页
-
-    	  $count      = M('article')->where(array('dd'=>1))->count();// 查询满足要求的总记录数
+      $id=I("get.id");
+      if($id){
+        $count      = M('article')->where(array('dd'=>1,'aid'=>$id))->count();// 查询满足要求的总记录数
+      }else{
+        $count      = M('article')->where(array('dd'=>1))->count();// 查询满足要求的总记录数
+      }
 
         $Page       = new \Think\Page($count,12);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 
         $show       = $Page->show();// 分页显示输出// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 
-        $list = M('article')->where(array('dd'=>1))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        if($id){
+          $list = M('article')->where(array('dd'=>1,'aid'=>$id,))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        }else{
+          $list = M('article')->where(array('dd'=>1))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        }
 
           //引入广告类别表
       foreach ($list as $k => $v) {
@@ -168,7 +176,7 @@ class ArclistController extends Controller {
 
             $art=M("article");
 
-            $art->where("id=$id")->setField('dd',0);
+            $art->where("id=$id")->delete();
 
             $this->success("操作成功啦！",U('Arclist/index'));    
 
@@ -286,96 +294,10 @@ class ArclistController extends Controller {
 
 
 
-       public function select1(){
-
-      $aid=I('get.id');
-      //实例化产品类别表
-      $tab=M('bigad2')->where(array('dd'=>1))->select();
-      $this->assign('type',$tab);
+       
 
 
 
-
-      //分页
-
-        $count      = M('article')->where(array('dd'=>1,'aid'=>$aid))->count();// 查询满足要求的总记录数
-
-        $Page       = new \Think\Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-
-        $show       = $Page->show();// 分页显示输出// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-
-        $list = M('article')->where(array('dd'=>1,'aid'=>$aid))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-
-          //引入广告类别表
-      foreach ($list as $k => $v) {
-       $tab=M('bigad2')->where(array('id'=>$v['aid']))->find();
-       $list[$k]['type']=$tab['type'];
-      }
-
-
-
-        $this->assign('list',$list);// 赋值数据集
-
-        $this->assign('arclist',$list);
-
-        $this->assign('page',$show);// 赋值分页输出
-
-
-
-
-        
-
-        //输出
-
-        $this->display();
-
-    }
-
-
-           public function select2(){
-
-      $aid=I('get.id');
-      //实例化产品类别表
-      $tab=M('bigad2')->where(array('dd'=>1))->select();
-      $this->assign('type',$tab);
-
-
-
-
-      //分页
-
-        $count      = M('article')->where(array('dd'=>1,'aid'=>$aid))->count();// 查询满足要求的总记录数
-
-        $Page       = new \Think\Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-
-        $show       = $Page->show();// 分页显示输出// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-
-        $list = M('article')->where(array('dd'=>1,'aid'=>$aid))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-
-          //引入广告类别表
-      foreach ($list as $k => $v) {
-       $tab=M('bigad2')->where(array('id'=>$v['aid']))->find();
-       $list[$k]['type']=$tab['type'];
-      }
-
-
-
-        $this->assign('list',$list);// 赋值数据集
-
-        $this->assign('arclist',$list);
-
-        $this->assign('page',$show);// 赋值分页输出
-
-
-
-
-        
-
-        //输出
-
-        $this->display();
-
-    }
 
 
 

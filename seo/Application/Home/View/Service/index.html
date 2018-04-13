@@ -14,9 +14,14 @@
 </head>
 
 <body>
+    <div class="talk">
+        <a href="skype:live:boyoucaipiao?chat" target="_blank"></a>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=2096586855&site=qq&menu=yes" target="_blank"></a>
+        <a href="javascript:;" target="_blank"></a>
+    </div>
    <div class="header">
         <div class="header-top g-width">
-            <a href="index.html" class="logo"><img src="__PUBLIC__/images/logo.png"/></a>
+            <a href="__MODULE__/Index" class="logo"><img src="__PUBLIC__/images/logo.png"/></a><img src="__PUBLIC__/images/contact.jpg" class="contact"/>
         </div>
         <div class="header-nav">
             <div class="nav g-width">
@@ -33,8 +38,11 @@
                     <li class="nav-li">
                         <a href="__MODULE__/Savety">安全理念</a>
                     </li>
+                    <li class="nav-li">
+                        <a href="__MODULE__/News">资讯中心</a>
+                    </li>
                     <li class="nav-li nav-active">
-                        <a href="__MODULE__/Service">售后服务</a>
+                        <a href="{:U('Service/index',array('type'=>1))}">关于博友</a>
                     </li>
                 </ul>
             </div>
@@ -46,21 +54,32 @@
             <div class="daohang">
                 <i></i>
                 <a href="__MODULE__/Index">博友彩票</a>&nbsp;&nbsp;》
-                <a href="__MODULE__/Service" class="active">售后服务</a>
+                <a href="{:U('Service/index',array('type'=>1))}" class="active">关于博友</a>
             </div>
             <div class="aside">
                 <dl>
                     <dt>
                         <i></i>
-                        <span>售后服务</span>
+                        <span>关于博友</span>
                     </dt>
-                    <dd>
-                        <a href="__MODULE__/Service" class="active">
+                    <dd <if condition="$type eq 1">class='active'</if>>
+                        <a href="{:U('Service/index',array('type'=>1))}">
+                            公司简介
+                        </a>
+                    </dd>
+                    <dd <if condition="$type eq 2">class='active'</if>>
+                        <a href="{:U('Service/index',array('type'=>2))}">
                             售后服务
+                        </a>
+                    </dd>
+                    <dd <if condition="$type eq 3">class='active'</if>>
+                        <a href="{:U('Service/index',array('type'=>3))}">
+                            联系博友
                         </a>
                     </dd>
                 </dl>
             </div>
+            <if condition="$type eq 2">
             <div class="sevice-content g-module">
                 <h4>
                     售后服务范围
@@ -202,36 +221,6 @@
                     </li>
                 </ul>
                 <h4>
-                    售后服务包
-                    <span>(包含工单数换算标准)</span>
-                </h4>
-                <div class="sev-package">
-                    <div class="package-1 cl package">
-                        <img src="__PUBLIC__/images/icon31.png" alt="">
-                        <div class="price-box">
-                            <p>180个工单</p>
-                            <p class="price">32800元/年</p>
-                            <p>包含软件同版本免费升级服务,更换版本8.5折优惠</p>
-                        </div>
-                    </div>
-                    <div class="package-2 cl package">
-                        <img src="__PUBLIC__/images/icon32.png" alt="">
-                        <div class="price-box">
-                            <p>120个工单</p>
-                            <p class="price">22800元/年</p>
-                            <p>包含软件同版本免费升级服务、更换版本9折优惠</p>
-                        </div>
-                    </div>
-                    <div class="package-3 cl package">
-                        <img src="__PUBLIC__/images/icon33.png" alt="">
-                        <div class="price-box">
-                            <p>60个工单</p>
-                            <p class="price">12800元/年</p>
-                            <p>包含软件同版本免费升级服务、更换版本9.5折优惠</p>
-                        </div>
-                    </div>
-                </div>
-                <h4>
                     工单制及工单号
                 </h4>
                 <div class="gd cl">
@@ -242,6 +231,25 @@
                     <p class="gd-title">工单数</p>
                     <p class="gd-content">我们把每1小时的工作量计为一个工单数。客户在提交了售后问题工单后，我们就会立即进行问题处理，同时会消耗客户一定的工单数。首年客户，我们都会免费赠送铜牌工单维护包（包含60个工单数）。</p>
                 </div>
+            <elseif condition="$type eq 1" />
+                <div class="profile-content g-module">
+                    <span>公司简介</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;博友彩票系统专注于彩票系统的开发与研究，公司服务于金融机构、彩票机构、上市公司量身定做互联网彩票系统的整体方案，公司秉承“帮助用户成功”的经营理念，在产品研发方面敢于创新、遵循市场规律、以过硬的技术和一流的服务赢得了市场的认可和客户的满意。以规范、创新、服务至上的理念，促进互联网彩票的良性发展。<br/><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;博友彩票系统历时9年的迭代开发，拥有最专业的彩票软件开发团队，一直致力于“行业信息化”这一品牌使命。从前期的需求调研、开发管理、售后服务三大环节保障客户的每一个产品的成功。现已覆盖全国，为全国近4000多家行业企业提供信息化及电子商务解决方案。<br/><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;博友期待与您合作，您的信任是博友彩票销售系统不懈努力的目标，博友彩票系统以“满足不同客户的不同需求”为准则，秉承“帮助用户成功”的经营理念，与全球企业一起共同成长，博友期待与您共创美好未来！<br/><br/>
+
+<span>彩票系统产品</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司目前拥有彩票网站系统、移动APP购彩版、彩票全网解决方案、彩票源码开源合作等产品解决方案，量身打造互联网彩票产品方案以及互联网彩票在线系统、移动购彩系统。 <br/><br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业购买博友彩票系统后通过快速部署便能上线企业彩票网站、彩票APP、彩票客户端，以快速在互联网上展开彩票战略部署！
+                </div>
+            <elseif condition="$type eq 3" />
+                <div class="contact-content g-module">
+                    <img src="__PUBLIC__/images/contact_us.jpg">
+                </div>
+            </if>
             </div>
         </div>
     </div>
@@ -256,9 +264,10 @@
                 </volist>
             </ul>
             <p class="copy">
-                深圳英迈思文化科技有限公司（虎步控股成员企业）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright  2008 - 2018博友彩票系统（shaove.com.cn）All Rights Reserved
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright  2008 - 2018博友彩票系统（shaove.com.cn）All Rights Reserved
                 粤ICP备09063742号 增值电信业务经营许可 电信与信息服务业务经营许可证
             </p >
+
         </div>
     </div>
 </body>

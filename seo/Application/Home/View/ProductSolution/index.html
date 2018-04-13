@@ -23,9 +23,14 @@
 </head>
 
 <body>
+    <div class="talk">
+        <a href="skype:live:boyoucaipiao?chat" target="_blank"></a>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=2096586855&site=qq&menu=yes" target="_blank"></a>
+        <a href="javascript:;" target="_blank"></a>
+    </div>
     <div class="header">
         <div class="header-top g-width">
-            <a href="index.html" class="logo"><img src="__PUBLIC__/images/logo.png"/></a>
+            <a href="__MODULE__/Index" class="logo"><img src="__PUBLIC__/images/logo.png"/></a><img src="__PUBLIC__/images/contact.jpg" class="contact"/>
         </div>
         <div class="header-nav">
             <div class="nav g-width">
@@ -43,7 +48,10 @@
                         <a href="__MODULE__/Savety">安全理念</a>
                     </li>
                     <li class="nav-li">
-                        <a href="__MODULE__/Service">售后服务</a>
+                        <a href="__MODULE__/News">资讯中心</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="{:U('Service/index',array('type'=>1))}">关于博友</a>
                     </li>
                 </ul>
             </div>
@@ -63,37 +71,47 @@
                         <i></i>
                         <span>产品解决方案</span>
                     </dt>
-                    <volist name="type" id="vo">
                     <dd>
-                        <a href="{:U('ProductSolution/index',array('id'=>$vo['id']))}" <if condition="$vo['id'] eq $id">class='active'</if>>
-                            {$vo.title}
+                        <a href="__MODULE__/CaipiaoSys">
+                            彩票网站系统
                         </a>
                     </dd>
-                    </volist>
+                    <dd>
+                        <a href="__MODULE__/MobileApp">
+                            移动APP购彩版
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="__MODULE__/CaipiaoSolution">
+                            彩票全网解决方案
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="__MODULE__/CaipiaoSource">
+                            彩票源码开源合作
+                        </a>
+                    </dd>
                 </dl>
             </div>
-            <div class="product-content g-module">
-            <empty name="id">
+             <div class="product-content g-module">
                 <ul>
-                <volist name="articles" id="vo">
                     <li>
-                        <img src="__PUBLIC__/Uploads/{$vo.img}" alt="">
+                        <img src="__PUBLIC__/images/icon_02.png" alt="">
                         <div class="desc-box">
-                            <h5><a href="{:U('ProductSolution/index',array('id'=>$vo['id'],'ids'=>'1'))}">{$vo.title}</a></h5>
-                            <p>{$vo.des}</p>
+                            <h5>彩票网站系统</h5>
+                            <p>SLS 5.3.0彩票网站系统  语   言:  简体中文    适用企业:   大型连锁投注站业主、彩票投资企业    硬件要求:   独立服务器/独立域名（需备案） 开源授权:   允许开源授权  定制开发:   接受个性化需求定制 增值服...</p>
                             <div class="know-more">
-                                <a href="{:U('ProductSolution/index',array('id'=>$vo['id'],'ids'=>'1'))}">了解更多&nbsp;》</a>
+                                <a href="__MODULE__/CaipiaoSys">了解更多&nbsp;》</a>
                             </div>
                         </div>
                     </li>
-                </volist>
-                   <!--  <li>
+                    <li>
                         <img src="__PUBLIC__/images/icon_03.png" alt="">
                         <div class="desc-box">
                             <h5>移动APP购彩版</h5>
-                            <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+                            <p>SLS 5.3.0移动APP购彩版 语   言:简体中文适用企业:移动智能手机领域、平板领域投资彩票的企业硬件要求:独立服务器/独立域名（需备案）开源授权:允许开源授权定制开发:接受个性化需求定制增值服务:彩票运营基础班（6课时）、开源授权培训班...</p>
                             <div class="know-more">
-                                <a href="javascript:;">了解更多&nbsp;》</a>
+                                <a href="__MODULE__/MobileApp">了解更多&nbsp;》</a>
                             </div>
                         </div>
                     </li>
@@ -101,9 +119,9 @@
                         <img src="__PUBLIC__/images/icon_04.png" alt="">
                         <div class="desc-box">
                             <h5>彩票全网解决方案</h5>
-                            <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+                            <p>博友彩票全网解决方案横跨PC、手机、APP、微信，实现彩票运营商全网覆盖，随时随地部署你的彩票系统。 　　一、PC彩票网站 　　1、官方彩票网站 　　　　SLS5.3是为网络彩票分销供应链上各个参与者提供服务的一整套系统，主要由代理商管理模块...</p>
                             <div class="know-more">
-                                <a href="javascript:;">了解更多&nbsp;》</a>
+                                <a href="__MODULE__/CaipiaoSolution">了解更多&nbsp;》</a>
                             </div>
                         </div>
                     </li>
@@ -111,27 +129,15 @@
                         <img src="__PUBLIC__/images/icon_05.png" alt="">
                         <div class="desc-box">
                             <h5>彩票源码开源合作</h5>
-                            <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+                            <p>博友彩票软件的源代码基于 ASP.NET+MsSQL 开发，业务逻辑架构采用ShoveCut技术，存储过程不放在数据库中，web服务器与数据库服务器的完整分离，支持大型彩票网站项目部署时的VPN数据库同步、DNS分流；页面架构采用ReWriteUrl 技术，以及 Ajax ...</p>
                             <div class="know-more">
-                                <a href="javascript:;">了解更多&nbsp;》</a>
+                                <a href="__MODULE__/CaipiaoSource">了解更多&nbsp;》</a>
                             </div>
                         </div>
-                    </li> -->
+                    </li>
                 </ul>
-            <else/>
-            {$art.content}
-            </empty>
-            <empty name="id">
-                <div class="fenye-box">
-                    <a href="{:U('ProductSolution/index',array('pa'=>0,'page'=>$pagesize))}" class="firstpage-btn">首页</a>
-                    <a href="{:U('ProductSolution/index',array('pa'=>$pa-1,'page'=>$pagesize))}" class="prev-btn">上一页</a>
-                    <a href="{:U('ProductSolution/index',array('pa'=>$pa+1,'page'=>$pagesize))}" class="next-btn">下一页</a>
-                    <a href="{:U('ProductSolution/index',array('pa'=>$pagesize,'page'=>$pagesize))}" class="lastpage-btn">尾页</a>        
-                </div>
-            </empty>
+               
             </div>
-        </div>
-        <div>
         </div>
     </div>
    <div class="footer">
@@ -145,7 +151,7 @@
                 </volist>
             </ul>
             <p class="copy">
-                深圳英迈思文化科技有限公司（虎步控股成员企业）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright  2008 - 2018博友彩票系统（shaove.com.cn）All Rights Reserved
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright  2008 - 2018博友彩票系统（shaove.com.cn）All Rights Reserved
                 粤ICP备09063742号 增值电信业务经营许可 电信与信息服务业务经营许可证
             </p >
         </div>
